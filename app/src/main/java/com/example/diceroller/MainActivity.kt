@@ -24,8 +24,13 @@ class MainActivity : AppCompatActivity() {
         val randomInt = Random().nextInt(6) + 1
 
         val resultText: TextView = findViewById(R.id.result_text)
+        val resultText1: TextView = findViewById(R.id.result_text1)
+        val resultText2: TextView = findViewById(R.id.result_text2)
+
         resultText.text = "Dice Rolled!"
 
         resultText.text = randomInt.toString()
+        resultText1.text = randomInt.toString()
+        resultText2.text = randomInt.toString()
     }
 }
