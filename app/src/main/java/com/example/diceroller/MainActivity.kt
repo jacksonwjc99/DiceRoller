@@ -22,6 +22,8 @@ class MainActivity : AppCompatActivity() {
         /*Toast.makeText(this, "button clicked",
             Toast.LENGTH_SHORT).show()*/
         val randomInt = Random().nextInt(6) + 1
+        val randomInt1 = Random().nextInt(6) + 1
+        val randomInt2 = Random().nextInt(6) + 1
 
         val resultText: TextView = findViewById(R.id.result_text)
         val resultText1: TextView = findViewById(R.id.result_text1)
@@ -30,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         resultText.text = "Dice Rolled!"
 
         resultText.text = randomInt.toString()
-        resultText1.text = randomInt.toString()
-        resultText2.text = randomInt.toString()
+        resultText1.text = randomInt1.toString()
+        resultText2.text = randomInt2.toString()
     }
 }
